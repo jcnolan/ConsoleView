@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8966C7F427F4C9E50081EF2A /* ConsoleViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966C7F227F4C9E50081EF2A /* ConsoleViewManager.swift */; };
+		8966C7F427F4C9E50081EF2A /* ConsoleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966C7F227F4C9E50081EF2A /* ConsoleView.swift */; };
 		8966C7F527F4C9E50081EF2A /* ConsoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966C7F327F4C9E50081EF2A /* ConsoleViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -15,7 +15,7 @@
 		8966C7E427F4C95E0081EF2A /* libConsoleView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libConsoleView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8966C7F027F4C9E40081EF2A /* ConsoleView-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ConsoleView-Bridging-Header.h"; sourceTree = "<group>"; };
 		8966C7F127F4C9E50081EF2A /* ConsoleView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ConsoleView.storyboard; sourceTree = "<group>"; };
-		8966C7F227F4C9E50081EF2A /* ConsoleViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleViewManager.swift; sourceTree = "<group>"; };
+		8966C7F227F4C9E50081EF2A /* ConsoleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleView.swift; sourceTree = "<group>"; };
 		8966C7F327F4C9E50081EF2A /* ConsoleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -51,7 +51,7 @@
 			children = (
 				8966C7F127F4C9E50081EF2A /* ConsoleView.storyboard */,
 				8966C7F327F4C9E50081EF2A /* ConsoleViewController.swift */,
-				8966C7F227F4C9E50081EF2A /* ConsoleViewManager.swift */,
+				8966C7F227F4C9E50081EF2A /* ConsoleView.swift */,
 				8966C7F027F4C9E40081EF2A /* ConsoleView-Bridging-Header.h */,
 			);
 			path = ConsoleView;
@@ -126,7 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8966C7F527F4C9E50081EF2A /* ConsoleViewController.swift in Sources */,
-				8966C7F427F4C9E50081EF2A /* ConsoleViewManager.swift in Sources */,
+				8966C7F427F4C9E50081EF2A /* ConsoleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

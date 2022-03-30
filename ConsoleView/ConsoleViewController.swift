@@ -27,5 +27,5 @@ class ConsoleViewController: NSViewController, ConsoleManagerViewController {
     public func writeToDebugConsole( _ destinationText:String)  { consoleScrollView.documentView!.insertText(destinationText) }
     
     @IBAction func clear(_ sender: Any)                         { consoleTextView.string = "" }
-    @IBAction func cancel(_ sender: Any)                        { ConsoleManager.hideConsole() }
+    @IBAction func cancel(_ sender: Any)                        { ConsoleViewManager.hideConsole() }
 }

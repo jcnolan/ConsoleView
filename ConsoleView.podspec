@@ -13,7 +13,7 @@ Pod::Spec.new do |spec|
   spec.author         = { "JC Nolan" => "jc@jcnolan.com" }
 
  #spec.homepage       = "https://github.com/jcnolan/MMTech-Common"
- #spec.homepage       = "https://github.com/jcnolan/ConsoleView"
+  spec.homepage       = "https://github.com/jcnolan/ConsoleView"
   
  # spec.source         = { :git => "https://github.com/jcnolan/MMTech-Common.git" }
  # spec.source         = { :git => "https://github.com/jcnolan/MMTech-Common.git", :tag => "#{spec.version}" }

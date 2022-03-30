@@ -33,7 +33,7 @@
         <!--Console View Controller-->
         <scene sceneID="Amw-IE-A6f">
             <objects>
-                <viewController id="8JN-sf-5lf" customClass="ConsoleViewController" customModule="MMActivityView" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8JN-sf-5lf" customClass="ConsoleViewController" customModule="ConsoleView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="abo-jk-l5Q">
                         <rect key="frame" x="0.0" y="0.0" width="1058" height="624"/>
                         <autoresizingMask key="autoresizingMask"/>

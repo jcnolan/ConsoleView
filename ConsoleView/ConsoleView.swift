@@ -16,8 +16,8 @@ public func print(_ items: String..., filename: String = #file, function : Strin
 {
     let output = items.map { "\($0)" }.joined(separator: separator)
     
-    if ConsoleManager.isActive {
-        ConsoleManager.printToConsole(output+terminator)
+    if ConsoleViewManager.isActive {
+        ConsoleViewManager.printToConsole(output+terminator)
     }
     
     Swift.print(output, terminator: terminator)
@@ -27,8 +27,8 @@ public func print(_ items: Any..., separator: String = " ", terminator: String =
 {
     let output = items.map { "\($0)" }.joined(separator: separator)
     
-    if ConsoleManager.isActive {
-        ConsoleManager.printToConsole(output+terminator)
+    if ConsoleViewManager.isActive {
+        ConsoleViewManager.printToConsole(output+terminator)
     }
     
     Swift.print(output, terminator: terminator)
@@ -41,7 +41,7 @@ protocol ConsoleManagerViewController: class {
     func writeToDebugConsole( _ destinationText:String)
 }
 
-class ConsoleManager {
+class ConsoleViewManager {
     
     static private var consoleWindowCtrl: NSWindowController? = nil
     static private var consoleViewCtrl: ConsoleManagerViewController? = nil
@@ -87,15 +87,15 @@ class ConsoleManager {
         
         // Hide / Show Console Window w/out Disabling System
         
-        if self.isShowing == false { ConsoleManager.displayConsole() }
-        else                       { ConsoleManager.hideConsole() }
+        if self.isShowing == false { ConsoleViewManager.displayConsole() }
+        else                       { ConsoleViewManager.hideConsole() }
     }
     
     static func displayConsole() {
         
         // External Entry: Show Console View, Activating if Necessary
         
-        if consoleWindowCtrl == nil {ConsoleManager.setActive()}
+        if consoleWindowCtrl == nil {ConsoleViewManager.setActive()}
         if let myWindowController = consoleWindowCtrl {
             myWindowController.showWindow(self)
         }
@@ -120,7 +120,7 @@ class ConsoleManager {
         //        the string (display, write to database, forward to another source)
         //        but putting the write here simplifies things binding wise (does it?)
         
-        ConsoleManager.consoleViewCtrl!.writeToDebugConsole(output)
+        ConsoleViewManager.consoleViewCtrl!.writeToDebugConsole(output)
     }
 }
 
